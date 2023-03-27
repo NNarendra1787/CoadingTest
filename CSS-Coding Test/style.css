@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: khaki; */
+    /* color: white; */
+}
+img{
+     display: none; 
+}
+.main{
+    height: 1000px;
+    background-color: black;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(autofit, minmax(5, 1fr));
+} 
+/* Top */
+header{
+    background-color: khaki;
+    height: 100px;
+    border: 2px solid black;
+    color: blue;
+    grid-area: 1/1/1/6;
+    text-align: center;
+}
+/* left */
+nav{
+    background-color: khaki;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    grid-area: 2/1/4/2;
+}
+/* Center */
+section{
+    background-color: khaki;
+    border: 2px solid black;
+    grid-area: 2/2/4/5;
+    height: 700px;
+    overflow: scroll;
+}
+.MeTop{
+    height: 100px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    border: 1px solid white;
+}
+/* #left{
+    display: block;
+    position: absolute;
+    top: 0px;
+    height: 20px;
+    width: 100px;
+} */
+#me{
+    position: relative;
+    top: 15px;
+    left: 0px;
+    font-size: 16px;
+    color: red;
+}
+.MeMid{
+    width: 400px;
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.MeMid p{
+    /* width: 400px; */
+    font-size: 34px;
+}
+.MeMid img{
+    display: block;
+    height: 250px;
+    height: 250px;
+    position: relative;
+    left: 512px;
+    top: -167px;
+}
+.red{
+    width: 300px;
+    /* flex-direction: column; */
+    /* text-align: center; */
+    color: red;
+    font-size: 36px;
+}
+.btn{
+    height: 50px;
+    padding: 12px 3px;
+    border-radius: 12px;
+    width: 200px;
+    background-color: skyblue;
+    color: white;
+    font-size: 20px;
+    /* font-weight: bold; */
+    /* margin: 30px 0px; */
+    position: absolute;
+    top: 260px;
+    left: 10px;
+    text-align: center;
+}
+.MeLog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.MeLog img{
+    display: block;
+    height: 80px;
+    width: 100px;
+}
+.MeBott{
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.MeCard{
+    /* display: flex;
+    justify-content: center; */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    /* background-color: white; */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    border: 1px solid red;
+    width: 250px;
+}
+.card p{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    text-align: center;
+}
+.card img{
+    display: block;
+    height: 35px;
+    width: 20%;
+}
+.sizeMe{
+    position: absolute;
+    top: 25px;
+    left: -10px;
+}
+/* right */
+aside{
+    background-color: khaki;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 2/5/4/6;
+}
+aside img{ 
+    display: block;
+    height: 250px;
+    width: 300px;
+}
+/* last */
+footer{
+    background-color: khaki;
+    border: 2px solid black;
+    color: blue;
+    grid-area: 4/1/5/6;
+    text-align: center;
+}
+
